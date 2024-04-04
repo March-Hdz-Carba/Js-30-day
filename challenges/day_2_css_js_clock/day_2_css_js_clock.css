@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.living_room {
+  align-items: center;
+  background-color:  #bee1e5;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.couch {
+  background-attachment: fixed;
+  background-image: url("../assets/living_room.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.clock_container {
+  height: 250px;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.clock {
+  border: 10px solid black;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 0px 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px,
+    inset 0 0 10px black,
+    0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 2rem;
+  width: 100%;
+}
+
+.clock_face {
+  height: 100%;
+  position: relative;
+  transform: translateY(-3px);
+  width: 100%;
+}
+
+.hand {
+  background-color: black;
+  height: 3px;
+  left: 12px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%; /*Default is 50%, middle element*/
+  transform: rotate(90deg);
+  width: 40%;
+}
