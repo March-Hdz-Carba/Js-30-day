@@ -47,7 +47,6 @@
 .clock_face {
   height: 100%;
   position: relative;
-  transform: translateY(-3px);
   width: 100%;
 }
 
